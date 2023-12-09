@@ -1,0 +1,51 @@
+.scale-in-center {
+	-webkit-animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+              
+.swing:hover{
+  animation-name: swing;
+      -webkit-animation-name: swing;
+      -moz-animation-name: swing;
+  animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      -moz-animation-duration: 1s;
+}
+
+  @keyframes swing {
+      20% {transform: rotate3d(0, 0, 1, 15deg);}
+      40% {transform: rotate3d(0, 0, 1, -10deg);}
+      60% {transform: rotate3d(0, 0, 1, 5deg);}
+      80% {transform: rotate3d(0, 0, 1, -5deg);}
+      to  {transform: rotate3d(0, 0, 1, 0deg);}
+  }
+            
+
